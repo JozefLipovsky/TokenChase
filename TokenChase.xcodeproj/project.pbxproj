@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		210E99832311B2AC00567865 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210E99822311B2AC00567865 /* GridItem.swift */; };
+		212538192312279600CCE3CC /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212538182312279600CCE3CC /* GridItemView.swift */; };
+		21286C7223161A850011A743 /* GameTimerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21286C7123161A850011A743 /* GameTimerProtocol.swift */; };
+		21286C74231624160011A743 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21286C73231624160011A743 /* GameTimer.swift */; };
+		21286C762318B9520011A743 /* TokenChaseGameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21286C752318B9520011A743 /* TokenChaseGameRules.swift */; };
+		213BB83823119761007DD67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BB83723119761007DD67F /* AppDelegate.swift */; };
+		213BB83A23119761007DD67F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BB83923119761007DD67F /* ViewController.swift */; };
+		213BB83D23119761007DD67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213BB83B23119761007DD67F /* Main.storyboard */; };
+		213BB83F23119762007DD67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213BB83E23119762007DD67F /* Assets.xcassets */; };
+		213BB84223119762007DD67F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213BB84023119762007DD67F /* LaunchScreen.storyboard */; };
+		213BB85823119762007DD67F /* TokenChaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BB85723119762007DD67F /* TokenChaseUITests.swift */; };
+		2153C2AA23123E7000F0499A /* TokenChaseGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153C2A923123E7000F0499A /* TokenChaseGame.swift */; };
+		2153C2AC23124B9900F0499A /* GridCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153C2AB23124B9900F0499A /* GridCoordinate.swift */; };
+		2153C2AE231262B900F0499A /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153C2AD231262B900F0499A /* Grid.swift */; };
+		21A23A0B23133FB200C8C52B /* GridItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A0A23133FB200C8C52B /* GridItemProtocol.swift */; };
+		21A23A0D2313441500C8C52B /* GameUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A0C2313441500C8C52B /* GameUpdateDelegate.swift */; };
+		21A23A11231359D000C8C52B /* CoordinateUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A10231359D000C8C52B /* CoordinateUpdate.swift */; };
+		21A23A13231361A500C8C52B /* TokenChaseGameGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A12231361A500C8C52B /* TokenChaseGameGridItem.swift */; };
+		21A23A162313A15A00C8C52B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A152313A15A00C8C52B /* Player.swift */; };
+		21A23A182314506E00C8C52B /* GridItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A172314506E00C8C52B /* GridItemTests.swift */; };
+		21A23A1A23145D3300C8C52B /* GridSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A1923145D3300C8C52B /* GridSize.swift */; };
+		21A23A1E2314721400C8C52B /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A1D2314721400C8C52B /* GridTests.swift */; };
+		21A23A202314875000C8C52B /* TokenChaseGameGridItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A1F2314875000C8C52B /* TokenChaseGameGridItemTests.swift */; };
+		21A23A2223148A3900C8C52B /* GridCoordinateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A2123148A3900C8C52B /* GridCoordinateTests.swift */; };
+		21A23A2423148BFB00C8C52B /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A23A2323148BFB00C8C52B /* GameTests.swift */; };
+		41F6C288231B2238008573D1 /* TokenChaseGameGridItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C287231B2238008573D1 /* TokenChaseGameGridItemProtocol.swift */; };
+		41F6C28C231B3139008573D1 /* TokenChaseGameRoundResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C28B231B3139008573D1 /* TokenChaseGameRoundResult.swift */; };
+		41F6C28E231C63B5008573D1 /* GameTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C28D231C63B5008573D1 /* GameTimerTests.swift */; };
+		41F6C290231C6BB3008573D1 /* GameRulesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C28F231C6BB3008573D1 /* GameRulesProtocol.swift */; };
+		41F6C292231C6CDD008573D1 /* TokenChaseGameRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C291231C6CDD008573D1 /* TokenChaseGameRulesTests.swift */; };
+		41F6C294231C703E008573D1 /* TokenChaseGameGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C293231C703E008573D1 /* TokenChaseGameGrid.swift */; };
+		41F6C296231D949A008573D1 /* CoordinateUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C295231D949A008573D1 /* CoordinateUpdateTests.swift */; };
+		41F6C298231D9828008573D1 /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C297231D9828008573D1 /* PlayerProtocol.swift */; };
+		41F6C29A231D9898008573D1 /* TokenChaseGameRoundResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6C299231D9898008573D1 /* TokenChaseGameRoundResultTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		213BB84923119762007DD67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 213BB82C23119760007DD67F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213BB83323119760007DD67F;
+			remoteInfo = TokenChase;
+		};
+		213BB85423119762007DD67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 213BB82C23119760007DD67F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213BB83323119760007DD67F;
+			remoteInfo = TokenChase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		210E99822311B2AC00567865 /* GridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
+		212538182312279600CCE3CC /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
+		21286C7123161A850011A743 /* GameTimerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerProtocol.swift; sourceTree = "<group>"; };
+		21286C73231624160011A743 /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
+		21286C752318B9520011A743 /* TokenChaseGameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameRules.swift; sourceTree = "<group>"; };
+		213BB83423119761007DD67F /* TokenChase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokenChase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		213BB83723119761007DD67F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		213BB83923119761007DD67F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		213BB83C23119761007DD67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		213BB83E23119762007DD67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		213BB84123119762007DD67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		213BB84323119762007DD67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213BB84823119762007DD67F /* TokenChaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenChaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		213BB84E23119762007DD67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213BB85323119762007DD67F /* TokenChaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenChaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		213BB85723119762007DD67F /* TokenChaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseUITests.swift; sourceTree = "<group>"; };
+		213BB85923119762007DD67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2153C2A923123E7000F0499A /* TokenChaseGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGame.swift; sourceTree = "<group>"; };
+		2153C2AB23124B9900F0499A /* GridCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCoordinate.swift; sourceTree = "<group>"; };
+		2153C2AD231262B900F0499A /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		21A23A0A23133FB200C8C52B /* GridItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemProtocol.swift; sourceTree = "<group>"; };
+		21A23A0C2313441500C8C52B /* GameUpdateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUpdateDelegate.swift; sourceTree = "<group>"; };
+		21A23A10231359D000C8C52B /* CoordinateUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateUpdate.swift; sourceTree = "<group>"; };
+		21A23A12231361A500C8C52B /* TokenChaseGameGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameGridItem.swift; sourceTree = "<group>"; };
+		21A23A152313A15A00C8C52B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		21A23A172314506E00C8C52B /* GridItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemTests.swift; sourceTree = "<group>"; };
+		21A23A1923145D3300C8C52B /* GridSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSize.swift; sourceTree = "<group>"; };
+		21A23A1D2314721400C8C52B /* GridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTests.swift; sourceTree = "<group>"; };
+		21A23A1F2314875000C8C52B /* TokenChaseGameGridItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameGridItemTests.swift; sourceTree = "<group>"; };
+		21A23A2123148A3900C8C52B /* GridCoordinateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCoordinateTests.swift; sourceTree = "<group>"; };
+		21A23A2323148BFB00C8C52B /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		41F6C287231B2238008573D1 /* TokenChaseGameGridItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameGridItemProtocol.swift; sourceTree = "<group>"; };
+		41F6C28B231B3139008573D1 /* TokenChaseGameRoundResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameRoundResult.swift; sourceTree = "<group>"; };
+		41F6C28D231C63B5008573D1 /* GameTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerTests.swift; sourceTree = "<group>"; };
+		41F6C28F231C6BB3008573D1 /* GameRulesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesProtocol.swift; sourceTree = "<group>"; };
+		41F6C291231C6CDD008573D1 /* TokenChaseGameRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameRulesTests.swift; sourceTree = "<group>"; };
+		41F6C293231C703E008573D1 /* TokenChaseGameGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameGrid.swift; sourceTree = "<group>"; };
+		41F6C295231D949A008573D1 /* CoordinateUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateUpdateTests.swift; sourceTree = "<group>"; };
+		41F6C297231D9828008573D1 /* PlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProtocol.swift; sourceTree = "<group>"; };
+		41F6C299231D9898008573D1 /* TokenChaseGameRoundResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenChaseGameRoundResultTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		213BB83123119760007DD67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213BB84523119762007DD67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213BB85023119762007DD67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		210E99812311B28800567865 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2153C2AD231262B900F0499A /* Grid.swift */,
+				21A23A1923145D3300C8C52B /* GridSize.swift */,
+				210E99822311B2AC00567865 /* GridItem.swift */,
+				21A23A12231361A500C8C52B /* TokenChaseGameGridItem.swift */,
+				2153C2AB23124B9900F0499A /* GridCoordinate.swift */,
+				21A23A10231359D000C8C52B /* CoordinateUpdate.swift */,
+				21A23A152313A15A00C8C52B /* Player.swift */,
+				21286C73231624160011A743 /* GameTimer.swift */,
+				41F6C28B231B3139008573D1 /* TokenChaseGameRoundResult.swift */,
+				41F6C293231C703E008573D1 /* TokenChaseGameGrid.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		212538172312277000CCE3CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				212538182312279600CCE3CC /* GridItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		213BB82B23119760007DD67F = {
+			isa = PBXGroup;
+			children = (
+				213BB83623119761007DD67F /* TokenChase */,
+				213BB84B23119762007DD67F /* TokenChaseTests */,
+				213BB85623119762007DD67F /* TokenChaseUITests */,
+				213BB83523119761007DD67F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		213BB83523119761007DD67F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				213BB83423119761007DD67F /* TokenChase.app */,
+				213BB84823119762007DD67F /* TokenChaseTests.xctest */,
+				213BB85323119762007DD67F /* TokenChaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		213BB83623119761007DD67F /* TokenChase */ = {
+			isa = PBXGroup;
+			children = (
+				21A23A0923133F9000C8C52B /* Protocols */,
+				212538172312277000CCE3CC /* Views */,
+				210E99812311B28800567865 /* Models */,
+				21A23A1423137C0C00C8C52B /* GameLogic */,
+				213BB83723119761007DD67F /* AppDelegate.swift */,
+				213BB83923119761007DD67F /* ViewController.swift */,
+				213BB83B23119761007DD67F /* Main.storyboard */,
+				213BB83E23119762007DD67F /* Assets.xcassets */,
+				213BB84023119762007DD67F /* LaunchScreen.storyboard */,
+				213BB84323119762007DD67F /* Info.plist */,
+			);
+			path = TokenChase;
+			sourceTree = "<group>";
+		};
+		213BB84B23119762007DD67F /* TokenChaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				21A23A172314506E00C8C52B /* GridItemTests.swift */,
+				21A23A1D2314721400C8C52B /* GridTests.swift */,
+				21A23A1F2314875000C8C52B /* TokenChaseGameGridItemTests.swift */,
+				21A23A2123148A3900C8C52B /* GridCoordinateTests.swift */,
+				41F6C295231D949A008573D1 /* CoordinateUpdateTests.swift */,
+				41F6C28D231C63B5008573D1 /* GameTimerTests.swift */,
+				21A23A2323148BFB00C8C52B /* GameTests.swift */,
+				41F6C299231D9898008573D1 /* TokenChaseGameRoundResultTests.swift */,
+				41F6C291231C6CDD008573D1 /* TokenChaseGameRulesTests.swift */,
+				213BB84E23119762007DD67F /* Info.plist */,
+			);
+			path = TokenChaseTests;
+			sourceTree = "<group>";
+		};
+		213BB85623119762007DD67F /* TokenChaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				213BB85723119762007DD67F /* TokenChaseUITests.swift */,
+				213BB85923119762007DD67F /* Info.plist */,
+			);
+			path = TokenChaseUITests;
+			sourceTree = "<group>";
+		};
+		21A23A0923133F9000C8C52B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				21A23A0A23133FB200C8C52B /* GridItemProtocol.swift */,
+				41F6C287231B2238008573D1 /* TokenChaseGameGridItemProtocol.swift */,
+				21A23A0C2313441500C8C52B /* GameUpdateDelegate.swift */,
+				21286C7123161A850011A743 /* GameTimerProtocol.swift */,
+				41F6C28F231C6BB3008573D1 /* GameRulesProtocol.swift */,
+				41F6C297231D9828008573D1 /* PlayerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		21A23A1423137C0C00C8C52B /* GameLogic */ = {
+			isa = PBXGroup;
+			children = (
+				2153C2A923123E7000F0499A /* TokenChaseGame.swift */,
+				21286C752318B9520011A743 /* TokenChaseGameRules.swift */,
+			);
+			path = GameLogic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		213BB83323119760007DD67F /* TokenChase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213BB85C23119762007DD67F /* Build configuration list for PBXNativeTarget "TokenChase" */;
+			buildPhases = (
+				213BB83023119760007DD67F /* Sources */,
+				213BB83123119760007DD67F /* Frameworks */,
+				213BB83223119760007DD67F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokenChase;
+			productName = TokenChase;
+			productReference = 213BB83423119761007DD67F /* TokenChase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		213BB84723119762007DD67F /* TokenChaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213BB85F23119762007DD67F /* Build configuration list for PBXNativeTarget "TokenChaseTests" */;
+			buildPhases = (
+				213BB84423119762007DD67F /* Sources */,
+				213BB84523119762007DD67F /* Frameworks */,
+				213BB84623119762007DD67F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213BB84A23119762007DD67F /* PBXTargetDependency */,
+			);
+			name = TokenChaseTests;
+			productName = TokenChaseTests;
+			productReference = 213BB84823119762007DD67F /* TokenChaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		213BB85223119762007DD67F /* TokenChaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213BB86223119762007DD67F /* Build configuration list for PBXNativeTarget "TokenChaseUITests" */;
+			buildPhases = (
+				213BB84F23119762007DD67F /* Sources */,
+				213BB85023119762007DD67F /* Frameworks */,
+				213BB85123119762007DD67F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213BB85523119762007DD67F /* PBXTargetDependency */,
+			);
+			name = TokenChaseUITests;
+			productName = TokenChaseUITests;
+			productReference = 213BB85323119762007DD67F /* TokenChaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		213BB82C23119760007DD67F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = JoLi;
+				TargetAttributes = {
+					213BB83323119760007DD67F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					213BB84723119762007DD67F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 213BB83323119760007DD67F;
+					};
+					213BB85223119762007DD67F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 213BB83323119760007DD67F;
+					};
+				};
+			};
+			buildConfigurationList = 213BB82F23119760007DD67F /* Build configuration list for PBXProject "TokenChase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 213BB82B23119760007DD67F;
+			productRefGroup = 213BB83523119761007DD67F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				213BB83323119760007DD67F /* TokenChase */,
+				213BB84723119762007DD67F /* TokenChaseTests */,
+				213BB85223119762007DD67F /* TokenChaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		213BB83223119760007DD67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213BB84223119762007DD67F /* LaunchScreen.storyboard in Resources */,
+				213BB83F23119762007DD67F /* Assets.xcassets in Resources */,
+				213BB83D23119761007DD67F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213BB84623119762007DD67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213BB85123119762007DD67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		213BB83023119760007DD67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F6C294231C703E008573D1 /* TokenChaseGameGrid.swift in Sources */,
+				21A23A0B23133FB200C8C52B /* GridItemProtocol.swift in Sources */,
+				21A23A11231359D000C8C52B /* CoordinateUpdate.swift in Sources */,
+				21286C74231624160011A743 /* GameTimer.swift in Sources */,
+				21A23A1A23145D3300C8C52B /* GridSize.swift in Sources */,
+				41F6C288231B2238008573D1 /* TokenChaseGameGridItemProtocol.swift in Sources */,
+				21286C7223161A850011A743 /* GameTimerProtocol.swift in Sources */,
+				210E99832311B2AC00567865 /* GridItem.swift in Sources */,
+				2153C2AA23123E7000F0499A /* TokenChaseGame.swift in Sources */,
+				21A23A162313A15A00C8C52B /* Player.swift in Sources */,
+				41F6C298231D9828008573D1 /* PlayerProtocol.swift in Sources */,
+				41F6C290231C6BB3008573D1 /* GameRulesProtocol.swift in Sources */,
+				213BB83A23119761007DD67F /* ViewController.swift in Sources */,
+				2153C2AC23124B9900F0499A /* GridCoordinate.swift in Sources */,
+				213BB83823119761007DD67F /* AppDelegate.swift in Sources */,
+				41F6C28C231B3139008573D1 /* TokenChaseGameRoundResult.swift in Sources */,
+				21A23A0D2313441500C8C52B /* GameUpdateDelegate.swift in Sources */,
+				21A23A13231361A500C8C52B /* TokenChaseGameGridItem.swift in Sources */,
+				21286C762318B9520011A743 /* TokenChaseGameRules.swift in Sources */,
+				2153C2AE231262B900F0499A /* Grid.swift in Sources */,
+				212538192312279600CCE3CC /* GridItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213BB84423119762007DD67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A23A182314506E00C8C52B /* GridItemTests.swift in Sources */,
+				41F6C29A231D9898008573D1 /* TokenChaseGameRoundResultTests.swift in Sources */,
+				41F6C292231C6CDD008573D1 /* TokenChaseGameRulesTests.swift in Sources */,
+				21A23A2223148A3900C8C52B /* GridCoordinateTests.swift in Sources */,
+				21A23A202314875000C8C52B /* TokenChaseGameGridItemTests.swift in Sources */,
+				41F6C296231D949A008573D1 /* CoordinateUpdateTests.swift in Sources */,
+				41F6C28E231C63B5008573D1 /* GameTimerTests.swift in Sources */,
+				21A23A1E2314721400C8C52B /* GridTests.swift in Sources */,
+				21A23A2423148BFB00C8C52B /* GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213BB84F23119762007DD67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213BB85823119762007DD67F /* TokenChaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		213BB84A23119762007DD67F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213BB83323119760007DD67F /* TokenChase */;
+			targetProxy = 213BB84923119762007DD67F /* PBXContainerItemProxy */;
+		};
+		213BB85523119762007DD67F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213BB83323119760007DD67F /* TokenChase */;
+			targetProxy = 213BB85423119762007DD67F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		213BB83B23119761007DD67F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				213BB83C23119761007DD67F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		213BB84023119762007DD67F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				213BB84123119762007DD67F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		213BB85A23119762007DD67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		213BB85B23119762007DD67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		213BB85D23119762007DD67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2328STN6B;
+				INFOPLIST_FILE = TokenChase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoLi.TokenChase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		213BB85E23119762007DD67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2328STN6B;
+				INFOPLIST_FILE = TokenChase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoLi.TokenChase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		213BB86023119762007DD67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2328STN6B;
+				INFOPLIST_FILE = TokenChaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoLi.TokenChaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokenChase.app/TokenChase";
+			};
+			name = Debug;
+		};
+		213BB86123119762007DD67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2328STN6B;
+				INFOPLIST_FILE = TokenChaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoLi.TokenChaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokenChase.app/TokenChase";
+			};
+			name = Release;
+		};
+		213BB86323119762007DD67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2328STN6B;
+				INFOPLIST_FILE = TokenChaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoLi.TokenChaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokenChase;
+			};
+			name = Debug;
+		};
+		213BB86423119762007DD67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2328STN6B;
+				INFOPLIST_FILE = TokenChaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoLi.TokenChaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokenChase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		213BB82F23119760007DD67F /* Build configuration list for PBXProject "TokenChase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213BB85A23119762007DD67F /* Debug */,
+				213BB85B23119762007DD67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213BB85C23119762007DD67F /* Build configuration list for PBXNativeTarget "TokenChase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213BB85D23119762007DD67F /* Debug */,
+				213BB85E23119762007DD67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213BB85F23119762007DD67F /* Build configuration list for PBXNativeTarget "TokenChaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213BB86023119762007DD67F /* Debug */,
+				213BB86123119762007DD67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213BB86223119762007DD67F /* Build configuration list for PBXNativeTarget "TokenChaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213BB86323119762007DD67F /* Debug */,
+				213BB86423119762007DD67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 213BB82C23119760007DD67F /* Project object */;
+}

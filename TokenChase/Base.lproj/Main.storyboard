@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TokenChase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hHf-2b-pGB">
+                                <rect key="frame" x="30" y="271" width="354" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hHf-2b-pGB" secondAttribute="height" multiplier="1:1" priority="999" id="i3N-UJ-sCI"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-V0-gEh">
+                                <rect key="frame" x="30" y="633" width="354" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-n8-MTX">
+                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYE-5F-VwX">
+                                        <rect key="frame" x="120.5" y="0.0" width="113" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="oZx-l5-x9q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4HP-MF-MVr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player B" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lb-oU-wJY">
+                                        <rect key="frame" x="241.5" y="0.0" width="112.5" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hdu-V0-gEh" firstAttribute="top" secondItem="hHf-2b-pGB" secondAttribute="bottom" constant="8" id="3D0-sE-GnT"/>
+                            <constraint firstItem="hHf-2b-pGB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3eJ-Iq-YYx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hdu-V0-gEh" secondAttribute="bottom" constant="30" id="CHt-Cw-GPL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hHf-2b-pGB" secondAttribute="trailing" constant="30" id="Jrl-9o-7ih"/>
+                            <constraint firstItem="hHf-2b-pGB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Q27-OU-PZ3"/>
+                            <constraint firstItem="hdu-V0-gEh" firstAttribute="trailing" secondItem="hHf-2b-pGB" secondAttribute="trailing" id="XaV-bc-pex"/>
+                            <constraint firstItem="hHf-2b-pGB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dpZ-uA-0dT"/>
+                            <constraint firstItem="hdu-V0-gEh" firstAttribute="leading" secondItem="hHf-2b-pGB" secondAttribute="leading" id="zBx-WP-ms5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gridStackView" destination="hHf-2b-pGB" id="nf3-LT-2vE"/>
+                        <outlet property="playerAScoreLabel" destination="3Lb-oU-wJY" id="r9q-rk-XQ5"/>
+                        <outlet property="playerBScoreLabel" destination="cSV-n8-MTX" id="YQa-Ts-WCW"/>
+                        <outlet property="startButton" destination="WYE-5F-VwX" id="SuD-qI-X8E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+</document>
